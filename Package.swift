@@ -31,7 +31,8 @@ let package = Package(
             ],
             path: "Tests/TestUtils",
             resources:[
-                .process("Resources")
+                .process("Resources"),
+                .copy("PrivacyInfo.xcprivacy")
             ]),
         .testTarget(
             name: "StatsigOnDeviceEvaluationsTestsSwift",
